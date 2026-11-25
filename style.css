@@ -11,3 +11,157 @@ background-image: url(wp9212011.jpg);
 background-size: cover;
 background-position: 50% 75%;
 }
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #17121f;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+.cabeçalho {
+    background: linear-gradient(90deg, #5e247c, #bd4b91);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.cabeçalho h1 {
+    font-size: 32px;
+    color: white;
+}
+
+.cabeçalho img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 40px 30px;
+}
+
+main > h1 {
+    text-align: center;
+    color: #e88ac4;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+/* Organização dos filmes */
+.filmes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Cards dos filmes */
+.filme-1,
+.filme-2,
+.filme-3 {
+    background-color: #2b2035;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(207, 89, 167, 0.2);
+    transition: transform 0.3s;
+}
+
+.filme-1:hover,
+.filme-2:hover,
+.filme-3:hover {
+    transform: translateY(-8px);
+}
+
+/* Títulos dos filmes */
+.filmes h2 {
+    color: #f09bd0;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+/* Imagens dos filmes */
+.imagem-filme1,
+.imagem-filme2,
+.imagem-filme3 {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Sinopses */
+.sinopse1,
+.sinopse2,
+.sinopse3 {
+    color: #e0d6e8;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0e0a13;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    color: #e88ac4;
+    font-size: 14px;
+}
+
+footer img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+footer img:hover {
+    transform: scale(1.15);
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    .cabeçalho {
+        padding: 15px 20px;
+    }
+
+    .cabeçalho h1 {
+        font-size: 24px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .filme-1,
+    .filme-2,
+    .filme-3 {
+        width: 100%;
+        max-width: 350px;
+    }
+}
